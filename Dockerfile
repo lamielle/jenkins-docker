@@ -3,7 +3,7 @@ MAINTAINER Alan LaMielle <alan.lamielle+github@gmail.com>
 
 USER root
 RUN apt-get update && apt-get install sudo docker.io make bzr mercurial vim python-dev python-pip python-virtualenv libssl-dev -y
-RUN wget https://get.docker.com/builds/Linux/x86_64/docker-1.6.0 && mv docker-1.6.0 /usr/local/bin
+RUN wget https://get.docker.com/builds/Linux/x86_64/docker-1.6.0 && mv docker-1.6.0 /usr/local/bin/docker
 RUN ln -s /usr/lib/x86_64-linux-gnu/libssl.so.1.0.0 /usr/lib/x86_64-linux-gnu/libssl.so.10
 RUN ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0 /usr/lib/x86_64-linux-gnu/libcrypto.so.10
 ADD sudoers /etc/

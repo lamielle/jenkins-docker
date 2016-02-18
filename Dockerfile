@@ -7,6 +7,6 @@ RUN wget https://get.docker.com/builds/Linux/x86_64/docker-1.5.0 && mv docker-1.
 RUN ln -s /usr/lib/x86_64-linux-gnu/libssl.so.1.0.0 /usr/lib/x86_64-linux-gnu/libssl.so.10
 RUN ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0 /usr/lib/x86_64-linux-gnu/libcrypto.so.10
 ADD sudoers /etc/
-ADD https://storage.googleapis.com/golang/go1.5.3.linux-amd64.tar.gz /usr/local/
-RUN cd /usr/local && tar -xvf go1.5.3.linux-amd64.tar.gz && rm go1.5.3.linux-amd64.tar.gz && mv go go1.5.3 && ln -s go1.5.3 go
+ADD https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz /usr/local/
+RUN cd /usr/local && tar -xvf go1.6.linux-amd64.tar.gz && rm go1.6.linux-amd64.tar.gz && mv go go1.6 && ln -s go1.6 go
 USER jenkins

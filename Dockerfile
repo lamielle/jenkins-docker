@@ -1,4 +1,4 @@
-FROM jenkins:1.642.2
+FROM jenkins:2.60.1
 MAINTAINER Alan LaMielle <alan.lamielle+github@gmail.com>
 
 USER root
